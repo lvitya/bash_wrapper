@@ -1,0 +1,68 @@
+[93m***bash wrapper***
+
+[39m
+Current working dir: /home/user/bash_logger
+print all args:
+
+/bin/bash
+./test1.sh
+***   ***
+
+***call stack***
+
+ 12349 - /bin/bash ./test1.sh
+ 24069 - bash
+  2281 - /usr/lib/gnome-terminal/gnome-terminal-server
+  1132 - /sbin/upstart --user
+  1011 - lightdm --session-child 12 19
+   896 - /usr/sbin/lightdm
+     1 - /sbin/init splash
+[93m***   ***
+
+[39m
+[93m***bash wrapper***
+
+[39m
+Current working dir: /home/user/bash_logger
+print all args:
+
+/bin/bash
+./test2.sh
+***   ***
+
+***call stack***
+
+ 12409 - /bin/bash ./test2.sh
+ 12349 - /bin/bash ./test1.sh
+ 24069 - bash
+  2281 - /usr/lib/gnome-terminal/gnome-terminal-server
+  1132 - /sbin/upstart --user
+  1011 - lightdm --session-child 12 19
+   896 - /usr/sbin/lightdm
+     1 - /sbin/init splash
+[93m***   ***
+
+[39m
+[93m***bash wrapper***
+
+[39m
+Current working dir: /home/user/bash_logger
+print all args:
+
+/bin/bash
+./test3.sh
+***   ***
+
+***call stack***
+
+ 12435 - /bin/bash ./test3.sh
+ 12349 - /bin/bash ./test1.sh
+ 24069 - bash
+  2281 - /usr/lib/gnome-terminal/gnome-terminal-server
+  1132 - /sbin/upstart --user
+  1011 - lightdm --session-child 12 19
+   896 - /usr/sbin/lightdm
+     1 - /sbin/init splash
+[93m***   ***
+
+[39m

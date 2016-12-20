@@ -1,5 +1,5 @@
 MKFILE_PATH := $(abspath $(lastword $(MAKEFILE_LIST)))
-INSTALL_DIR = /bin/test/
+INSTALL_DIR = /bin/
 
 bash_wrapper: bash_wrapper.c
 	gcc bash_wrapper.c -o bash_wrapper
