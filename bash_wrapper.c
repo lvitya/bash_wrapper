@@ -3,6 +3,9 @@
 #include <unistd.h>
 #include <string.h>
 
+// for now LOG_FILE is statically located in current directory
+#define LOG_FILE "bash_log"
+
 /**
  * Get a process name from its PID.
  * @param pid PID of the process
@@ -96,7 +99,7 @@ void print_log(int argc, char *argv[])
     FILE * fp;
 
     fp = stdout;
-    fp = fopen("/home/vitya/bash_log", "a");
+    fp = fopen(LOG_FILE, "a");
 
     //**************************************************************
     fprintf(fp, "\e[93m"); // Light yellow color
